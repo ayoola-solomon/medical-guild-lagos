@@ -35,7 +35,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp dist",
-    "start": "node --harmony app.js"
+    "start": "npm install && node --harmony app.js"
   },
   "repository": {
     "type": "git",
