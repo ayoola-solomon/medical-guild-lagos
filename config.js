@@ -22,6 +22,6 @@ module.exports = {
   views: 'views',
 
   // local preview server's port
-  port: 3000
+  port: process.env.PORT || 3000
 
 };
