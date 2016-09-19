@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "demo static website",
   "main": "app.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "del": "^0.1.2",
     "gulp": "^3.8.7",
     "gulp-copy": "0.0.2",
@@ -32,6 +31,7 @@
     "swig": "^1.4.2",
     "vinyl-paths": "^1.0.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --harmony app.js",
