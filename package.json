@@ -2,7 +2,7 @@
   "name": "demo",
   "version": "0.0.1",
   "description": "demo static website",
-  "main": "bin/cli.js",
+  "main": "app.js",
   "dependencies": {},
   "devDependencies": {
     "del": "^0.1.2",
@@ -33,11 +33,13 @@
     "vinyl-paths": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "prestart": "gulp dist"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ayoola-solomon/medical-guild-lagos"
   },
   "keywords": [
     "koa",
