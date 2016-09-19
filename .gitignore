@@ -43,5 +43,7 @@ Session.vim
 .netrwhist
 *~
 dist/*
-temp/*
+temp/css
+temp/head
+temp/section
 node_modules/*
