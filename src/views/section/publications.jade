@@ -1,74 +1,85 @@
-.container-fluid(style="margin-top: 20px;")
+.container(style="margin-top: 2em")
   .row
-    .col-md-7.col-sm-9.col-xs-12
-      .card.card-block
-        h5(style="float: left; margin-right: 48%;") Recent Publications
-        button.btn.btn-outline-success(type='button') 
-          | View all recent publications
+    .col-md-8.col-sm-9.col-xs-12
+      .card.card-block.expanded
+        .section-header
+          h2 Recent Publications
+          button.btn.btn-outline-success(type='button') View all recent publications
         ul.recent-publications(style="list-style: none; padding-left: 0px;")
-          li(style="padding: 20px;")
-            .row
-              .col-md-3.col-sm-3.col-xs-12
-                img(src='https://source.unsplash.com/category/people/150x150' width="150" height="150")
-              .col-md-9.col-sm-9.col-xs-12
+          .publication
+            .image
+              img(src='https://source.unsplash.com/category/food/100x100' width="100" height="100")
+            .content
+              .title-container
                 h5 Learn About Swimmers Ear
-                p.list-group-item-text(style="text-align: justify")
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.  
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              p.list-group-item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident est laboriosam totam blanditiis quaerat eligendi velit magni neque modi illo ea, quisquam at illum officia vero fugiat eius culpa!
+              .spacer
                 a.card-link(href='#') Read more...
-          li(style="padding: 20px;")
-            .row
-              .col-md-3.col-sm-3.col-xs-12
-                img(src='https://source.unsplash.com/category/food/150x150' width="150" height="150")
-              .col-md-9.col-sm-9.col-xs-12
+          .publication
+            .image
+              img(src='https://source.unsplash.com/category/buildings/100x100' width="100" height="100")
+            .content
+              .title-container
                 h5 Learn About Swimmers Ear
-                p.list-group-item-text(style="text-align: justify")
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              p.list-group-item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident est laboriosam totam blanditiis quaerat eligendi velit magni neque modi illo ea, quisquam at illum officia vero fugiat eius culpa!
+              .spacer
                 a.card-link(href='#') Read more...
-          
-          li(style="padding: 20px;")
-            .row
-              .col-md-3.col-sm-3.col-xs-12
-                img(src='https://source.unsplash.com/category/buildings/150x150' width="150" height="150")
-              .col-md-9.col-sm-9.col-xs-12
+          .publication
+            .image
+              img(src='https://source.unsplash.com/category/objects/100x100' width="100" height="100")
+            .content
+              .title-container
                 h5 Learn About Swimmers Ear
-                p.list-group-item-text(style="text-align: justify")
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              p.list-group-item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident est laboriosam totam blanditiis quaerat eligendi velit magni neque modi illo ea, quisquam at illum officia vero fugiat eius culpa!
+              .spacer
                 a.card-link(href='#') Read more...
-                      
-          li(style="padding: 20px;")
-            .row
-              .col-md-3.col-sm-3.col-xs-12
-                img(src='https://source.unsplash.com/category/objects/150x150' width="150" height="150")
-              .col-md-9.col-sm-9.col-xs-12
+          .publication
+            .image
+              img(src='https://source.unsplash.com/category/technology/100x100' width="100" height="100")
+            .content
+              .title-container
                 h5 Learn About Swimmers Ear
-                p.list-group-item-text(style="text-align: justify")
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-                  | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+              p.list-group-item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non provident est laboriosam totam blanditiis quaerat eligendi velit magni neque modi illo ea, quisquam at illum officia vero fugiat eius culpa!
+              .spacer
                 a.card-link(href='#') Read more...
-                
-    .col-md-5.col-sm-4.col-xs-12
       .card.card-block
-        div.text-xs-center(style="padding: 40px;")
+        .subscription-container
+          .side-by-side
+            .image
+              i.fa.fa-send-o
+            .content
+              h5 Subscribe
+          p Subscribe to our newsletter to get all the latest news and information straight to your inbox.
+          form
+            input.form-control(type='text', placeholder='Username', aria-describedby='basic-addon1')
+            button.btn.btn-outline-success.btn-block(type="button") Subscribe
+    .col-md-4.col-sm-3.col-xs-12
+      .card.card-block
+        .section-header
+          h2 Upcoming Events
+          button.btn.btn-outline-success(type='button') View all
+        .event
+          h5 Event title
+          p Sun 16th of August 2017
+        .event
+          h5 Event title
+          p Sun 16th of August 2017
+        .event
+          h5 Event title
+          p Sun 16th of August 2017
+      .card.card-block
+        .section-header
+          h2 Member Spotlight
+        .member-container
+          img.img-fluid(src='https://source.unsplash.com/category/people/300x300')
+          h3 Meet Dr. Alex Okunowo
+          p "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatum vero quidem quia vitae"
+          a.more-link(href='#') See full profile &raquo;
+      .card.card-block
+        .text-xs-center.social-container
           h5 Follow us on Social Media
-          i.fa.fa-facebook-official.fa-3x(style="margin-right: 30px; padding-top: 10px;")
-          i.fa.fa-twitter.fa-3x(style="margin-right: 30px; padding-top: 10px;")
-          i.fa.fa-instagram.fa-3x(style="margin-right: 30px; padding-top: 10px;")
-          hr
-          .row
-            .col-md-8.col-md-offset-3(style="margin-left: 90px;")
-              div
-                i.fa.fa-send-o.fa-3x(style="float: left;")
-                h4 Subscribe to our newsletter
-                p Subscribe to get all the latest news and information straight to your inbox.
-                form
-                  input.form-control(type='text', placeholder='Username', aria-describedby='basic-addon1')
-                button.btn.btn-outline-success.btn-block(type="button" style="margin-top: 10px;") Send
+          i.fa.fa-facebook-official.fa-2x
+          i.fa.fa-twitter.fa-2x
+          i.fa.fa-instagram.fa-2x
 
                 

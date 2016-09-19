@@ -30,7 +30,7 @@ app.get(/.*\.html|.*\.htm|^\/$/, function* (next) {
 });
 
 // serve static files which doesn't need to compile(.css, .jpg, etc)
-app.use(common.static(path.join(__dirname, cfg.src, cfg.assets)));
+app.use(common.static(path.join(__dirname, cfg.assets)));
 
 // serve .less, .scss, etc.
 app.use(common.static(path.join(__dirname, 'temp')));

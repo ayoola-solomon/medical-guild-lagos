@@ -1,0 +1,52 @@
+@import '_navigation';
+@import '_publication';
+
+body {
+    font-family: "Avenir Next", Arial, sans-serif;
+}
+
+.montage {
+    min-height: 460px;
+    background: #fff;
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,0.1);
+    border-bottom: solid 1px rgba(255,255,255, 0.5);
+    margin-top: 80px;
+}
+
+.carousel-caption {
+    text-align: left;
+}
+
+.carousel-indicators {
+    text-align: left;
+
+    li {
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        width: 50px;
+        height: 3px;
+        margin: 0;
+        margin-right: 4px;
+
+        &.active {
+            border: none;
+            background: #72BC41;
+            width: 50px;
+            height: 3px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.card-block {
+    margin-bottom: 2em;
+}
+
+footer {
+    background: #323232;
+    color: #fff;
+    margin-top: 2em;
+    padding: 40px 0;
+    font-size: 0.9em;
+}

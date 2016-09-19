@@ -7,7 +7,7 @@ module.exports = {
   src: 'src',
 
   // project's static files' path, eg: css, js, image
-  assets: 'assets',
+  assets: 'temp',
 
   // scripts
   scripts: 'scripts',
